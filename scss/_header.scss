@@ -1,0 +1,67 @@
+.info_header{
+    background: rgba(240, 242, 244, 1);
+}
+.holder_title{
+   display: flex;
+   justify-content: space-between;
+}
+.call_part{
+   align-items: center;
+}
+.about_part{
+   padding: 0;
+   gap: 20px;
+   li{
+      &::before{
+         content:url(/img/checkMark.svg);
+         padding-right: 7px;
+      }
+   }
+}
+.call_part{
+   gap: 21px;
+   .buy_svg{
+      &::before{
+         content:url(/img/buy.svg);
+         padding-right: 5px; 
+      }
+      &:hover{
+         color: var(--green);
+      }
+   }
+   .call_svg{
+      &::before{
+         content:url(/img/call.svg);
+         padding-right: 5px; 
+      }
+      &:hover{
+         color: var(--green);
+      }
+   }
+   .chat_svg{
+      &::before{
+         content:url(/img/chat.svg);
+         padding-right: 5px; 
+      }
+      &:hover{
+         color: var(--green);
+      }
+   }
+}
+.menu_list{
+   gap: 25px;
+}
+.link_header{
+   .login_svg{
+      &::before{
+         content:url(/img/login.svg);
+         padding-right: 5px; 
+      }
+   }
+   .cart_svg{
+      &::before{
+         content:url(/img/cart.svg);
+         padding-right: 5px; 
+      }
+   }
+}
