@@ -2,7 +2,11 @@
    box-sizing: border-box;
  }
 :root{
-     --green: #00d26b;    
+     --green: #00d26b;
+     --pale: #898D93;
+     --gray: #39404a; 
+     --white: #fff; 
+    
 }
  body{
    margin: 0;
@@ -36,4 +40,11 @@
  }
  a{
    text-decoration: none;
+   color:black;
  }
+ input{
+  border-style: none;
+  &:focus{
+    outline: none;
+  }
+}

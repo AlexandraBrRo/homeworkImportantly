@@ -5,6 +5,9 @@
 
 :root {
   --green: #00d26b;
+  --pale: #898D93;
+  --gray: #39404a;
+  --white: #fff;
 }
 
 body {
@@ -54,6 +57,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+input {
+  border-style: none;
+}
+input:focus {
+  outline: none;
 }
 
 .info_header {
@@ -109,10 +120,25 @@ a {
   color: var(--green);
 }
 
+/*patr 2*/
+.content_header {
+  max-height: 90px;
+}
+
+.content_part {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 21px 0;
+}
+
 .menu_list {
   gap: 25px;
 }
 
+.link_header {
+  gap: 21px;
+}
 .link_header .login_svg::before {
   content: url(/img/login.svg);
   padding-right: 5px;
@@ -122,6 +148,27 @@ a {
   padding-right: 5px;
 }
 
+.form_header {
+  margin-left: 40px;
+}
+
+.inp_header {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  width: 317px;
+  height: 47px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 22px;
+  color: var(--pale);
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.img_logo {
+  padding-top: 10px;
+}
+
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -129,6 +176,9 @@ a {
 
 :root {
   --green: #00d26b;
+  --pale: #898D93;
+  --gray: #39404a;
+  --white: #fff;
 }
 
 body {
@@ -178,4 +228,217 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+input {
+  border-style: none;
+}
+input:focus {
+  outline: none;
+}
+
+/*carusel start*/
+.conteiner_carusel {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 223, 223, 0.549)), to(rgba(123, 198, 183, 0.657)));
+  background: -o-linear-gradient(top, rgba(238, 223, 223, 0.549) 0%, rgba(123, 198, 183, 0.657) 100%);
+  background: linear-gradient(180deg, rgba(238, 223, 223, 0.549) 0%, rgba(123, 198, 183, 0.657) 100%);
+  max-height: 637px;
+}
+
+.carousel-item > img {
+  display: block;
+  width: 715px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carusel_txtpart {
+  width: 419px;
+  padding-top: 177px;
+  padding-bottom: 173px;
+  display: block;
+}
+.carusel_txtpart .title_txt {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: "montserrat";
+  color: var(--green);
+}
+.carusel_txtpart .info_txt {
+  padding: 15px 0;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 53px;
+}
+.carusel_txtpart .item_txt {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--gray);
+  padding-bottom: 30px;
+}
+
+.btn_botton {
+  background-color: var(--green);
+  width: 153px;
+  height: 47px;
+  border-radius: 4px;
+}
+.btn_botton .btn {
+  color: var(--white);
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 25px;
+  font-size: 14px;
+  padding: 11px 40px;
+}
+.btn_botton:hover {
+  background: var(--white);
+}
+.btn_botton:hover .btn {
+  color: var(--green);
+}
+
+/*carusel end*/
+.imtermediate_block {
+  min-height: 34px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 17px;
+}
+
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  max-width: 436px;
+}
+
+.numbers_part {
+  gap: 49px;
+}
+
+.nums {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: var(--green);
+  padding-right: 7px;
+}
+
+.years {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray);
+  display: block;
+  max-width: 143px;
+}
+
+.clients {
+  display: block;
+  max-width: 64px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray);
+}
+
+.stars {
+  display: block;
+  max-width: 139px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray);
+}
+
+.txt_element {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.txt_element .txt_el {
+  width: 589px;
+}
+
+.geo_img {
+  background-image: url(/img/deometricFons.png);
+  height: 487px;
+  width: 706px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.adob_img {
+  background-image: url(/img/adobeStock.png);
+  height: 483px;
+  width: 793px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rec_top, .rec_botton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 301px;
+  height: 188px;
+}
+.rec_top:hover, .rec_botton:hover {
+  background-color: var(--green);
+}
+
+.comp_svg::before {
+  content: url(/img/comp.svg);
+  fill: var(--green);
+}
+.comp_svg:hover {
+  fill: var(--white);
+}
+
+.tools_svg::before {
+  content: url(/img/tools.svg);
+  fill: var(--green);
+}
+.tools_svg:hover {
+  fill: var(--white);
+}
+
+.data_svg::before {
+  content: url(/img/data.svg);
+  fill: var(--green);
+}
+.data_svg:hover {
+  fill: var(--white);
+}
+
+.asset_svg::before {
+  content: url(/img/asset.svg);
+  fill: var(--green);
+}
+.asset_svg:hover {
+  fill: var(--white);
 }/*# sourceMappingURL=all.css.map */

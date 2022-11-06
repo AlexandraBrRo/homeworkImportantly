@@ -48,10 +48,19 @@
       }
    }
 }
+/*patr 2*/
+.content_header{
+   max-height: 90px;
+}
+.content_part{
+   justify-content: space-between;
+   padding: 21px 0;
+}
 .menu_list{
    gap: 25px;
 }
 .link_header{
+   gap: 21px;
    .login_svg{
       &::before{
          content:url(/img/login.svg);
@@ -64,4 +73,23 @@
          padding-right: 5px; 
       }
    }
+}
+.form_header{
+   margin-left: 40px;
+}
+.inp_header{
+   border: 1px solid #ececec;
+   border-radius: 4px;
+   width: 317px;
+   height: 47px;
+   padding-top: 11px;
+   padding-bottom: 11px;
+   padding-left: 22px;
+   color: var(--pale);
+   font-family: 'Montserrat';
+   font-size: 14px;
+
+}
+.img_logo{
+   padding-top: 10px;
 }

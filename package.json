@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "bootstrap": "^5.2.2",
+    "cdn": "^1.1.1",
     "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "google-cdn": "^1.1.0",
+    "jsdelivr-cdn-data": "^1.0.4"
   }
 }
