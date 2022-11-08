@@ -145,7 +145,7 @@ h2{
 }
 
 .geo_img{
-   background-image: url(/img/deometricFons.png);
+   background-image: url(/img/geometricFons.png);
    height: 487px;
    width: 706px;
    background-size: cover;
@@ -226,7 +226,6 @@ h2{
          fill: var(--white);
       }
    }
-   
 }
 .tools_svg{
    font-family: 'Inter';
@@ -379,6 +378,7 @@ h2{
    max-width: 22%;
    flex: 0 0 22%;
    flex-direction: column;
+   padding-bottom: 75px;
 }
 .line{
    width: 1px;
@@ -444,6 +444,116 @@ h2{
       color: var(--green);
    }
 }
-.servic_block{
+.service_block{
+   position: absolute;
+   top: 2765px;
+   left: 0;
+   width: 100%;
+   background-color: rgba(243, 244, 246, 0.56);
+}
+.service_name{
+   padding-top: 59px;
+}
+.title_item{
+   font-family: 'Inter';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 22px;
+   .service_svg{
+      padding-right: 10px;
+   }
+}
+.service_holder{
+   gap: 21px;
+   padding-top: 21px;
+   padding-bottom: 50px;
+   width: 100%;
+}
+.service_column{
+   background: var(--white);
+   max-width: 23.7%;
+   flex: 0 0 23.7%;
+   display: flex;
+   flex-direction: column;
+   padding: 30px 0 0 23px;
+   min-height: 157px;
+   border-radius: 5px;
+   z-index: 5;
+}
+.service_txt{
+   font-family: 'Montserrat';
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 25px;
+   color: var(--gray);
+   padding: 10px 0;
+}
+.posters_block{
+   gap: 20px;
+   padding-bottom: 50px;
+}
+.poster_holder{
+   max-width: 49%;
+   flex: 0 0 49%;
+   // width: 285px;
+   height: 285px;    
+   background: transparent;
+   background-image: linear-gradient(90deg,rgba(0,0,0,.67) 0%,rgba(6,15,27,0) 100%);
+   opacity: .67;
+   border-radius: 4px;
    position: relative;
+}
+.poster{
+   height: 285px;
+   object-fit: cover;
+   background-size:cover;
+   background-position: center;
+   overflow: hidden;
+   width: 100%;
+   display: block;
+   position: absolute;
+   border-radius: 4px;
+   top: 0;      
+   left: 0; 
+   z-index: -5;
+}
+.poster_txt{
+   color: var(--white);
+   z-index: 50;
+   display: flex;
+   flex-direction: column;
+   max-width: 348px;
+   padding-top: 72px;
+   padding-left: 35px;
+   .poster_title{
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px; 
+   }
+   .poster_info{
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+   }
+   .poster_linc{
+      > a{
+         font-family: 'Montserrat';
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 25px;
+         color: var(--white);
+      }
+   }
+}
+.geo_fons{
+   background-image: url(/img/geometricFons.png);
+   height: 375px;
+   width: 563px;
+   background-size: cover;
+   object-fit: cover;
+   position: absolute;
+   top: 16px;
+   left: 981px;
 }
