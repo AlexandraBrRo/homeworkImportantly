@@ -52,15 +52,35 @@
 .content_header{
    max-height: 90px;
 }
+
+.fixed {
+   position: fixed;
+   top: 0;
+   background: var(--white);
+   width: 100%;
+   z-index: 100;
+ }
+
 .content_part{
    justify-content: space-between;
    padding: 21px 0;
 }
 .menu_list{
    gap: 25px;
+   padding-top: 15px;
+}
+.menu_txt{
+   font-family: 'Montserrat';
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 25px;
+   &:hover{
+      color: #000;
+   }
 }
 .link_header{
    gap: 21px;
+   padding-top: 15px;
    .login_svg{
       &::before{
          content:url(/img/login.svg);
