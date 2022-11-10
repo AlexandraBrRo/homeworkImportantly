@@ -75,12 +75,10 @@ input:focus {
 
 .info_header {
   background: rgb(240, 242, 244);
+  height: 47px;
 }
 
 .holder_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -95,6 +93,9 @@ input:focus {
 .about_part {
   padding: 0;
   gap: 20px;
+}
+.about_part li {
+  padding-top: 15px;
 }
 .about_part li::before {
   content: url(/img/checkMark.svg);
@@ -195,6 +196,31 @@ input:focus {
   padding-top: 10px;
 }
 
+.main_nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main_nav .drop_info {
+  display: none;
+  position: absolute;
+  top: 37px;
+  left: -201px;
+  background: rgb(242, 150, 150);
+  width: 100%;
+  padding-top: 20px;
+}
+.main_nav li:hover > .drop_info {
+  display: block;
+}
+.main_nav .second_list {
+  width: 50%;
+  background: rgb(251, 221, 123);
+}
+.main_nav .second_list > li > a {
+  display: block;
+}
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

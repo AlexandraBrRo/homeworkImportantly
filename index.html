@@ -22,10 +22,10 @@
    <title>Document</title>
 </head>
 <body>
-   <div class="wrapper">
-      <div class="header">
+   <main class="wrapper">
+      <header class="header">
          <div class="info_header">
-            <div class="holder_title centered">
+            <div class="holder_title centered d-flex">
                <ul class="about_part d-flex">
                   <li>Refurbished</li>
                   <li><b>Fully Tested</b> and Updated</li>
@@ -43,15 +43,43 @@
                <div class="img_logo">
                   <img class="logo_header" src="/img/logo.png" alt="" width="192" height="36">
                </div>       
-               <nav class="menu">
-                  <ul class="menu_list d-flex">
-                     <li><a class="menu_txt" href="#!">Servers</a></li>
+               <div class="menu">
+                  <ul class="menu_list d-flex main_nav">
+                     <li>
+                        <a class="menu_txt" href="#!">Servers</a>
+                        <!-- 1 рівень -->
+                        <div class="drop_info">
+                           <ul>                        
+                              <li>
+                                 <a href="#!">Dell PowerEdge Servers</a>
+                                 <!-- 2 рівень -->
+                                 <div class="drop_info">
+                                    <ul class="second_list">
+                                       <span><a href="#!">Dell PowerEdge 13th Generation</a></span>
+                                       <span><a href="#!">Rackmount Servers</a></span>
+                                       <li><a href="#!">Dell PowerEdge R530</a></li>
+                                       <li><a href="#!">Dell PowerEdge R630</a></li>
+                                       <li><a href="#!">Dell PowerEdge R730</a></li>
+                                       <li><a href="#!">Dell PowerEdge R530xd</a></li>
+                                       <span><a href="#!">Blade Servers</a></span>
+                                       <li><a href="#!">Dell PowerEdge M630</a></li>
+                                       <span><a href="#!">Tower Servers</a></span>
+                                       <li><a href="#!">Dell PowerEdge T630</a></li>
+                                    </ul>
+                                 </div>
+                              </li>
+                              <li>
+                                 <a href="#!">HP ProLiant Servers</a>
+                              </li> 
+                           </ul>                           
+                        </div>
+                     </li>
                      <li><a class="menu_txt" href="#!">Storage</a></li>
                      <li><a class="menu_txt" href="#!">Networking</a></li>
                      <li><a class="menu_txt" href="#!">Components</a></li>
                      <li><a class="menu_txt" href="#!">Support & Services</a></li>          
                   </ul>
-               </nav>
+               </div>
                <form class="form_header" action="">
                   <input class="inp_header" type="text" value="Search for products...">  
                </form>
@@ -61,9 +89,9 @@
                </ul>
             </div>
          </div>
-      </div>
+      </header>
 
-      <div class="main">
+      <main class="main">
          <!-- carusel start -->
          <div class="conteiner_carusel">
             <div class="centered">
@@ -460,8 +488,9 @@
                </div>
             </div>
          </div>
-      </div>
-      <div class="footer">
+      </main>
+
+      <footer class="footer">
          <div class="footer_basic">
             <div class="users_footer d-flex centered">
                <div class="icons_footer d-flex">
@@ -530,7 +559,7 @@
          <div class="footer_end d-flex">
             <span>&copy; 2020 Enterasource, LLC. All Rights Reserved.</span>
          </div>
-      </div>
+      </footer>
    </div>
 
 

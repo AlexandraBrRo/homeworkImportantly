@@ -1,8 +1,8 @@
 .info_header{
     background: rgba(240, 242, 244, 1);
+    height: 47px;
 }
 .holder_title{
-   display: flex;
    justify-content: space-between;
 }
 .call_part{
@@ -12,6 +12,7 @@
    padding: 0;
    gap: 20px;
    li{
+      padding-top: 15px;
       &::before{
          content:url(/img/checkMark.svg);
          padding-right: 7px;
@@ -65,10 +66,13 @@
    justify-content: space-between;
    padding: 21px 0;
 }
+
 .menu_list{
    gap: 25px;
    padding-top: 15px;
+   // position: relative;
 }
+
 .menu_txt{
    font-family: 'Montserrat';
    font-weight: 600;
@@ -113,3 +117,52 @@
 .img_logo{
    padding-top: 10px;
 }
+
+//drop list
+
+.main_nav{
+   position: relative;
+   display: flex;
+
+   .drop_info{
+      display: none;
+      position: absolute;
+      top: 37px;
+      left: -201px;
+      // background: var(--white);
+      background: rgb(242, 150, 150);
+      width: 100%;
+      padding-top: 20px;
+   }
+   li{
+      &:hover{
+         >.drop_info{
+            display: block;
+         }         
+      }
+   }
+   .second_list{
+      width: 50%;
+      background: rgb(251, 221, 123);
+      >li{
+         >a{
+            display: block;
+            // padding: 10px;
+         }
+      }
+      .drop_info{
+         
+      }
+   }
+}
+
+
+
+
+
+
+
+
+// main, footer{
+//    display: none;
+// }
